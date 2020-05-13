@@ -1,8 +1,7 @@
 ## binary
 
-Сериализация примитивных типов в набор байтов для последующей отправки по сети
-
--------
+Сериализация примитивных типов в набор байтов для последующей отправки по сети.
+Модуль, необходимый для работы с бинарными протоколами движков Sociall House.
 
 ## Examples
 
@@ -20,11 +19,11 @@ func main(){
     
     sendToServer(w.Buffer())
 
-    
+    binary.ReleaseWriter(w)
 }
 
 func sendToServer(buf []byte){
-    
+    // ...code
 }
 ```
 
@@ -46,10 +45,12 @@ func main(){
     checkErr(err)
 
     doSomething(someInt, someByte, someByteArrayLen, someByteArray)
+
+    binary.ReleaseReader(r)
 }
 
 func checkErr(err error){
-
+    // ...code
 }
 
 func getBytesFromServer() ([]byte, int){
@@ -57,6 +58,6 @@ func getBytesFromServer() ([]byte, int){
 }
 
 func doSomething(someInt int32, someByte byte, someByteArrayLen byte, someByteArray []byte){
-
+    // ...code
 }
 ```
