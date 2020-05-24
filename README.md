@@ -7,7 +7,7 @@
 ## Установка
 
 ``` 
-go get github.com/Sociall-House/binary
+go get github.com/SociallHouse/binary
 ```
 
 ## Примеры
@@ -15,7 +15,7 @@ go get github.com/Sociall-House/binary
 ```go
 package main
 
-import "github.com/Sociall-House/binary" 
+import "github.com/SociallHouse/binary" 
 
 func main(){
     // int + byte + byte array

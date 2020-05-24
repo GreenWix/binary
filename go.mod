@@ -1,3 +1,3 @@
-module github.com/Sociall-House/binary
+module github.com/SociallHouse/binary
 
 go 1.14
