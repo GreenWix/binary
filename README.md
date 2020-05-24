@@ -37,7 +37,7 @@ func sendToServer(buf []byte){
 ```go
 package main
 
-import "github.com/Sociall-House/binary" 
+import "github.com/SociallHouse/binary" 
 
 func main(){
     r := binary.AcquireReader(getBytesFromServer())
