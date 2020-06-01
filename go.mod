@@ -1,3 +1,3 @@
-module github.com/SociallHouse/binary
+module github.com/GreenWix/binary
 
 go 1.14

@@ -7,7 +7,7 @@
 ## Установка
 
 ``` 
-go get github.com/SociallHouse/binary
+go get github.com/GreenWix/binary
 ```
 
 ## Примеры
@@ -15,7 +15,7 @@ go get github.com/SociallHouse/binary
 ```go
 package main
 
-import "github.com/SociallHouse/binary" 
+import "github.com/GreenWix/binary" 
 
 func main(){
     // int + byte + byte array
@@ -37,7 +37,7 @@ func sendToServer(buf []byte){
 ```go
 package main
 
-import "github.com/SociallHouse/binary" 
+import "github.com/GreenWix/binary" 
 
 func main(){
     r := binary.AcquireReader(getBytesFromServer())
