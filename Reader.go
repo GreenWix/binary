@@ -10,6 +10,10 @@ type Reader struct {
 	buf []byte
 }
 
+func (r *Reader) Buffer() ([]byte){
+	return r.buf
+}
+
 func (r *Reader) ReadByte() (num byte, err error) {
 	bb, err := r.Read(1)
 	if err != nil {
